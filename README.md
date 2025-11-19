@@ -1,16 +1,47 @@
-# React + Vite
+# My React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Setup
 
-Currently, two official plugins are available:
+This project is a basic React application initialized with Vite. It includes components for a button and an input field.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Initialization
 
-## React Compiler
+1. Create a new React project using Vite:
+   npm create vite@latest my-react-app -- --template react
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Navigate to the project directory:
+   cd my-react-app
 
-## Expanding the ESLint configuration
+3. Install dependencies:
+   npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Components
+
+- **Button Component**: Located in `src/components/Button.jsx`
+  - Props:
+    - `text`: The text displayed on the button.
+    - `type`: The type of the button (e.g., button, submit).
+  - Event Handlers:
+    - `onClick`: Handles click events.
+
+- **Input Component**: Located in `src/components/Input.jsx`
+  - Props:
+    - `placeholder`: The placeholder text for the input field.
+    - `type`: The type of the input field (e.g., text, password).
+  - Event Handlers:
+    - `onChange`: Handles changes in the input value.
+
+### Usage
+
+Import the Button and Input components in `src/App.jsx` and use them by passing the necessary props.
+
+### Testing the Project
+
+To run the project, use the following command:
+npm run dev
+
+Open your browser and navigate to the provided local server address to test the components.
+
+### Deployment
+
+Deploy the application on a hosting platform such as Vercel or Netlify for public access. Follow the respective platform's instructions for deployment.
