@@ -1,4 +1,4 @@
-/* Flex контейнер для центрирования */
+
 body, html {
   height: 100%;
   margin: 0;
@@ -14,7 +14,7 @@ body, html {
   height: 100vh;           
 }
 
-/* Контейнер формы */
+
 .form-container {
   width: 100%;
   max-width: 350px;
@@ -25,13 +25,13 @@ body, html {
   text-align: center;
 }
 
-/* Заголовок */
+
 h2 {
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Labels */
+
 label {
   color: #333;
   display: block;
@@ -41,7 +41,7 @@ label {
   font-size: 14px;
 }
 
-/* Inputs */
+
 input {
   width: 100%;
   padding: 10px;
@@ -52,7 +52,6 @@ input {
   box-sizing: border-box;
 }
 
-/* Кнопки */
 .button-group {
   margin-top: 20px;
   display: flex;
